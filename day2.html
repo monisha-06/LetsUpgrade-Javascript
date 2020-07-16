@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 assignment</title>
+</head>
+<body>
+    <script>
+        let age = prompt("What is your age?");
+        console.log(age);
+
+        if (confirm('Are you sure you are above 21?')) {
+  
+            console.log('Can drink');
+        } else
+        {
+  
+            console.log('Cannot drink');
+        }
+    
+
+
+        //The splice() method can be used to add new items to an array:
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+
+        //The concat() method creates a new array by merging (concatenating) existing arrays:
+        var myGirls = ["Cecilie", "Lone"];
+        var myBoys = ["Emil", "Tobias", "Linus"];
+        var myChildren = myGirls.concat(myBoys);   // Concatenates (joins) myGirls and myBoys
+
+        //The slice() method slices out a piece of an array into a new array.
+        //This example slices out a part of an array starting from array element 1 ("Orange"):
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var citrus = fruits.slice(1);
+
+        //JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+        //This is always the case when you try to output an array.
+        //These two examples will produce the same result:
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits.toString();
+    
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+
+
+
+
+        //The concat() method is used to join two or more strings.This method does not change the existing strings, but returns a new string containing the text of the joined strings.//
+        var str1 = "Hello ";
+        var str2 = "world!";
+        var res = str1.concat(str2);
+
+        //The toUpperCase() method converts a string to uppercase letters.
+        var str = "Hello World!";
+        var res = str.toUpperCase();
+    </script>
+</body>
+</html>
